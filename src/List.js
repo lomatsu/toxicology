@@ -9,7 +9,7 @@ class List extends React.Component {
     fetch('https://toxicology-test.herokuapp.com/api/samples', {
       method: 'get',
       headers: {
-        'Authorization': `Bearer + { process.env.TOKEN }`
+        'Authorization': `Bearer + {process.env.TOKEN}`
       }
     })
       .then(res => res.json())
